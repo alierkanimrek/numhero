@@ -1,0 +1,167 @@
+{
+  "language": "Turkish",
+  "languageCode": "tr",
+  "description": "Turkish letter to number mapping for numerology with vowel/consonant classification",
+  "letters": [
+    {
+      "letter": "A",
+      "number": 1,
+      "type": "vowel"
+    },
+    {
+      "letter": "B",
+      "number": 2,
+      "type": "consonant"
+    },
+    {
+      "letter": "C",
+      "number": 3,
+      "type": "consonant"
+    },
+    {
+      "letter": "Ç",
+      "number": 3,
+      "type": "consonant"
+    },
+    {
+      "letter": "D",
+      "number": 4,
+      "type": "consonant"
+    },
+    {
+      "letter": "E",
+      "number": 5,
+      "type": "vowel"
+    },
+    {
+      "letter": "F",
+      "number": 6,
+      "type": "consonant"
+    },
+    {
+      "letter": "G",
+      "number": 7,
+      "type": "consonant"
+    },
+    {
+      "letter": "Ğ",
+      "number": 7,
+      "type": "consonant"
+    },
+    {
+      "letter": "H",
+      "number": 8,
+      "type": "consonant"
+    },
+    {
+      "letter": "I",
+      "number": 9,
+      "type": "vowel"
+    },
+    {
+      "letter": "İ",
+      "number": 9,
+      "type": "vowel"
+    },
+    {
+      "letter": "J",
+      "number": 1,
+      "type": "consonant"
+    },
+    {
+      "letter": "K",
+      "number": 2,
+      "type": "consonant"
+    },
+    {
+      "letter": "L",
+      "number": 3,
+      "type": "consonant"
+    },
+    {
+      "letter": "M",
+      "number": 4,
+      "type": "consonant"
+    },
+    {
+      "letter": "N",
+      "number": 5,
+      "type": "consonant"
+    },
+    {
+      "letter": "O",
+      "number": 6,
+      "type": "vowel"
+    },
+    {
+      "letter": "Ö",
+      "number": 6,
+      "type": "vowel"
+    },
+    {
+      "letter": "P",
+      "number": 7,
+      "type": "consonant"
+    },
+    {
+      "letter": "Q",
+      "number": 8,
+      "type": "consonant"
+    },
+    {
+      "letter": "R",
+      "number": 9,
+      "type": "consonant"
+    },
+    {
+      "letter": "S",
+      "number": 1,
+      "type": "consonant"
+    },
+    {
+      "letter": "Ş",
+      "number": 1,
+      "type": "consonant"
+    },
+    {
+      "letter": "T",
+      "number": 2,
+      "type": "consonant"
+    },
+    {
+      "letter": "U",
+      "number": 3,
+      "type": "vowel"
+    },
+    {
+      "letter": "Ü",
+      "number": 3,
+      "type": "vowel"
+    },
+    {
+      "letter": "V",
+      "number": 4,
+      "type": "consonant"
+    },
+    {
+      "letter": "W",
+      "number": 5,
+      "type": "consonant"
+    },
+    {
+      "letter": "X",
+      "number": 6,
+      "type": "consonant"
+    },
+    {
+      "letter": "Y",
+      "number": 7,
+      "type": "consonant"
+    },
+    {
+      "letter": "Z",
+      "number": 8,
+      "type": "consonant"
+    }
+  ]
+}
