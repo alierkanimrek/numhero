@@ -85,11 +85,7 @@ export function PinCodeTable({ pinCode, size = 'big', label }: Props) {
 
       </div>
 
-      {size === 'big' && (
-        <p style={{ textAlign: 'center', fontSize: '0.75rem', color: 'var(--ink)', opacity: 0.4, marginTop: 14 }}>
-          {pinCode.join(' · ')}
-        </p>
-      )}
+
     </div>
   );
 }

@@ -44,10 +44,10 @@ export function ImportExportPanel() {
       <p style={{fontSize:'0.7rem',fontWeight:600,letterSpacing:'0.05em',color:'var(--ink)',opacity:0.4,marginBottom:8}}>VERİ YÖNETİMİ</p>
       <div className="flex gap-2 flex-wrap">
         <button className="btn-secondary" style={{fontSize:'0.8rem',padding:'6px 12px'}} onClick={handleExport} disabled={contacts.length === 0}>
-          ↓ JSON İndir
+          ↓ İndir
         </button>
         <button className="btn-secondary" style={{fontSize:'0.8rem',padding:'6px 12px'}} onClick={() => fileRef.current?.click()}>
-          ↑ JSON Yükle
+          ↑ Yükle
         </button>
         <input ref={fileRef} type="file" accept=".json" style={{display:'none'}} onChange={handleImport} />
       </div>

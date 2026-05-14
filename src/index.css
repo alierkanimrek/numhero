@@ -174,3 +174,118 @@ body {
 @media (max-width: 768px) {
   .pin-cell { width: 44px; height: 44px; font-size: 1.1rem; }
 }
+
+/* ===== RESPONSIVE LAYOUT ===== */
+
+/* HomePage: desktop = sidebar sol, mobil = liste alta */
+.home-layout {
+  display: flex;
+  gap: 0;
+  min-height: calc(100vh - 56px);
+}
+
+.home-sidebar {
+  width: 260px;
+  min-width: 200px;
+  border-right: 1px solid rgba(201,168,76,0.2);
+  background: #FDFAF3;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.home-main {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .home-layout {
+    flex-direction: column;
+  }
+
+  .home-sidebar {
+    width: 100%;
+    min-width: unset;
+    border-right: none;
+    border-top: 1px solid rgba(201,168,76,0.2);
+    order: 2; /* Liste alta */
+    max-height: 320px;
+    padding: 16px 12px;
+  }
+
+  .home-main {
+    order: 1;
+    padding: 16px;
+  }
+}
+
+/* Genel sayfa padding mobilde küçülsün */
+@media (max-width: 640px) {
+  .page-enter > div,
+  .page-enter {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* Kişi seçici dropdown tam genişlik */
+  .input-field {
+    max-width: 100% !important;
+  }
+
+  /* Sinastri: kişi seçimi dikey */
+  .synastry-selectors {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Sinastri: pin ve yaşam amacı kartları dikey */
+  .two-col-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Pin kodu hücreleri küçülsün */
+  .pin-cell {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 1rem !important;
+  }
+
+  /* Numeroloji header wrap */
+  .numerology-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .numerology-header > div:last-child {
+    text-align: left !important;
+  }
+
+  /* KulvarDisplay header */
+  .kulvar-header {
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+
+  /* Butonlar tam genişlik */
+  .contact-actions {
+    width: 100%;
+  }
+
+  .contact-actions button {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .pin-cell {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.85rem !important;
+  }
+}
