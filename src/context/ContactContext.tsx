@@ -52,7 +52,7 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
   const addContact = ({ fullName, birthDate }: { fullName: string; birthDate: string }) => {
     const contact: Contact = {
       id: generateId(),
-      fullName: fullName.trim(),
+      fullName: fullName.trim().toLocaleUpperCase('tr-TR'),
       birthDate,
       letterValues: {},
       createdAt: new Date().toISOString(),
@@ -61,7 +61,10 @@ export function ContactProvider({ children }: { children: React.ReactNode }) {
     setSelectedContactId(contact.id);
   };
 
-  const updateContact = (id: string, data: Partial<Contact>) => dispatch({ type: 'UPDATE', id, data });
+  const updateContact = (id: string, data: Partial<Contact>) => {
+    if (data.fullName) data.fullName = data.fullName.trim().toLocaleUpperCase('tr-TR');
+    dispatch({ type: 'UPDATE', id, data });
+  };
   const deleteContact = (id: string) => dispatch({ type: 'DELETE', id });
   const importContacts = (incoming: Contact[], replace: boolean) => {
     if (replace) {
