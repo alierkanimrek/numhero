@@ -1,14 +1,13 @@
-// Vedic numerology planet colors
-export const NUMBER_COLORS: Record<number, { primary: string; secondary: string; bg: string; text: string }> = {
-  1: { primary: '#FF0000', secondary: '#FFA500', bg: '#FFF0F0', text: '#CC0000' },
-  2: { primary: '#94A3B8', secondary: '#CBD5E1', bg: '#F8FAFC', text: '#64748B' },
-  3: { primary: '#A855F7', secondary: '#FFFF00', bg: '#FAF5FF', text: '#7C3AED' },
-  4: { primary: '#3B82F6', secondary: '#6B7280', bg: '#EFF6FF', text: '#1D4ED8' },
-  5: { primary: '#16A34A', secondary: '#D2B48C', bg: '#F0FDF4', text: '#15803D' },
-  6: { primary: '#EC4899', secondary: '#ADD8E6', bg: '#FDF2F8', text: '#DB2777' },
-  7: { primary: '#65A30D', secondary: '#86EFAC', bg: '#F7FEE7', text: '#4D7C0F' },
-  8: { primary: '#1E3A5F', secondary: '#374151', bg: '#EFF6FF', text: '#1E3A5F' },
-  9: { primary: '#DC2626', secondary: '#9B2335', bg: '#FFF1F2', text: '#B91C1C' },
+export const NUMBER_COLORS: Record<number, { primary: string; bg: string; text: string }> = {
+  1: { primary: '#FF5500', bg: '#FFF2EC', text: '#CC4400' },
+  2: { primary: '#FFFF00', bg: '#FFFFF0', text: '#999900' },
+  3: { primary: '#55FF00', bg: '#F2FFEC', text: '#33AA00' },
+  4: { primary: '#00FF55', bg: '#ECFFF2', text: '#00AA33' },
+  5: { primary: '#00FFFF', bg: '#ECFFFF', text: '#009999' },
+  6: { primary: '#0055FF', bg: '#ECF2FF', text: '#0033CC' },
+  7: { primary: '#5500FF', bg: '#F2ECFF', text: '#3300CC' },
+  8: { primary: '#FF00FF', bg: '#FFECFF', text: '#CC00CC' },
+  9: { primary: '#FF0055', bg: '#FFECF2', text: '#CC0033' },
 };
 
 export function getNumberColor(n: number) {
