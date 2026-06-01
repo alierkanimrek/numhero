@@ -43,7 +43,7 @@ export function ContactForm({ onClose, editId }: Props) {
             placeholder="Ahmet Mehmet Yılmaz"
             onKeyDown={e => e.key === 'Enter' && handleSubmit()}
           />
-        </div>
+        </div><br/>
         <div>
           <label style={{ fontSize: '0.72rem', fontWeight: 600, color: 'var(--ink)', opacity: 0.55, display: 'block', marginBottom: 4, letterSpacing: '0.05em' }}>
             DOĞUM TARİHİ *
